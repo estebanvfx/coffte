@@ -1,37 +1,43 @@
-<!-- src/components/layers/fisrtLayer.astro -->
----
----
+<style>
+    .leaf {
+        transition: transform 0.3s ease;
+    }
 
-<div class="flex flex-col md:flex-row gap-4 md:pt-52 pt-28 md:px-56 pb-20 bg-[#fcdfe3]">
+    @keyframes springMove {
+        0% { transform: translateY(0) scale(1); }
+        25% { transform: translateY(-20px) scale(1.2); }
+        50% { transform: translateY(10px) scale(0.9); }
+        75% { transform: translateY(-10px) scale(1.05); }
+        100% { transform: translateY(0) scale(1); }
+    }
+
+    .container:hover .leaf {
+        animation: springMove 1s ease-in-out;
+    }
+
+    .container {
+        position: relative;
+    }
+</style>
+
+<div class="flex flex-col md:flex-row gap-4 md:pt-52 pt-28 md:px-40 pb-20 bg-[#fcdfe3]">
     <div class="flex-1 p-4">
-        <!-- Contenido de la primera parte -->
-        <h1 class="md:text-6xl text-5xl font-bold uppercase text-start text-[#3d1218]">Del corazón del café, nacen sabores naturales que transforman</h1>
-        <p class="text-2xl mt-3 font-bold text-start bg-[#3d1218] text-white px-4 py-2 inline-block uppercase">Recuerda cuidar de ti y de los tuyos.</p>
-        
+        <h1 class="md:text-4xl text-3xl font-bold uppercase text-start text-[#3d1218]">Del corazón del café, nacen sabores naturales que transforman</h1>
+        <p class="text-xl md:text-2xl mt-3 font-bold text-start bg-[#3d1218] text-white px-4 py-2 inline-block uppercase">Recuerda cuidar de ti y de los tuyos.</p>
     </div>
-    <div class="flex-1 relative">
-        <!-- Contenido de la segunda parte -->
-        <!-- <p class="instructions text-sm sm:text-base md:text-lg mb-4">To get started, open the directory <code>src/pages</code> in your project.</p> -->
-        
-        <!-- Imagen de la botella centrada -->
-
-        <!--le modifique el tamaño de la imagen de la botella -->
-
-        <div class="relative mx-auto w-64 h-64">
+    <div class="flex-1 relative container"> 
+        <div class="relative mx-auto w-64 md:w-80 h-48 md:h-64">
             <!-- Hojas detrás de la botella -->
+            <img src="/img/sheets/hoja_derc_doble.png" alt="Hoja Fondo 1" class="leaf absolute top-[2000px] md:top-[200px] left-[40px] md:left-[90px] w-16 h-16 md:w-20 md:h-20 z-0 opacity-70 hidden md:block">
+            <img src="/img/sheets/hoja_derc.png" alt="Hoja Fondo 2" class="leaf absolute top-[5px] md:top-[7px] right-[25px] md:right-[50px] w-12 h-12 md:w-14 md:h-14 z-0 opacity-70 hidden md:block">
+            <img src="/img/sheets/hojaIzquierda.png" alt="Hoja Fondo 5" class="leaf absolute top-[20px] md:top-[40px] left-[-20px] md:left-[-30px] w-12 h-12 md:w-16 md:h-16 z-0 opacity-70 hidden md:block">
 
+            <!-- Imagen de la botella con tamaño ajustado y centrada sin afectar el contenedor -->
+            <img src="/img/layers/coffte-cafe-product.png" alt="Botella" 
+                class="absolute inset-0 m-auto z-10 md:mb-1"
+                style="width: 250px; height: 320px; transform: rotate(325deg);" />
 
-            <!-- AUN LE FALTA PARA QUE NO CRITIQUE -->
-
-            <img src="public/img/sheets/hoja_derc_doble.png" alt="Hoja Fondo 1" class="absolute top-[100px] left-[9px] w-20 h-20 z-0 opacity-70">
-            <img src="public/img/sheets/hoja_derc_doble.png" alt="Hoja Fondo 1" class="absolute top-[200px] left-[110px] w-20 h-20 z-0 opacity-70">
-            <img src="public/img/sheets/hoja_derc.png" alt="Hoja Fondo 2" class="absolute top-[7px] right-[10px] w-14 h-14 z-0 opacity-70">
-            <img src="public/img/sheets/hojaIzquierda.png" alt="Hoja Fondo 3" class="absolute bottom-[15px] left-[15px] w-14 h-14 z-0 opacity-70">
-            <img src="public/img/sheets/hoja_derc.png" alt="Hoja Fondo 4" class="absolute bottom-[10px] right-[15px] w-12 h-12 z-0 opacity-70">
-            <img src="public/img/sheets/hojaIzquierda.png" alt="Hoja Fondo 5" class="absolute top-[20px] left-[10px] w-16 h-16 z-0 opacity-70">
-
-            <!-- Imagen de la botella centrada con rotación personalizada -->
-            <img src="/img/layers/coffte-cafe-product.png" alt="Botella" class="w-auto h-auto object-cover relative z-0 transform" style="transform: rotate(325deg);" />
+                <!-- EL RESPONIVE ESTA RARO O ESO CREO, SI AYUDA SE AGREADECE SI NO TAMBIEN -->
         </div>
     </div>
 </div>
