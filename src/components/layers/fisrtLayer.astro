@@ -1,16 +1,22 @@
 <!-- src/components/layers/fisrtLayer.astro -->
 ---
 ---
-<div class="flex flex-col md:flex-row gap-4 pt-5">
-    <div class="flex-1 border border-gray-400 p-4">
+
+<div class="flex flex-col md:flex-row gap-4 md:pt-52 pt-28 md:px-56 pb-20 bg-[#fcdfe3]">
+    <div class="flex-1 p-4">
         <!-- Contenido de la primera parte -->
-        <h1 class="text-lg md:text-2xl">Welcome to <span class="text-gradient mt-56">Astro</span></h1>
+        <h1 class="md:text-6xl text-5xl font-bold uppercase text-start text-[#3d1218]">Del corazón del café, nacen sabores naturales que transforman</h1>
+        <p class="text-2xl mt-3 font-bold text-start bg-[#3d1218] text-white px-4 py-2 inline-block uppercase">Recuerda cuidar de ti y de los tuyos.</p>
+        
     </div>
-    <div class="flex-1 border border-gray-400 p-4 relative">
+    <div class="flex-1 relative">
         <!-- Contenido de la segunda parte -->
-        <p class="instructions text-sm sm:text-base md:text-lg mb-4">To get started, open the directory <code>src/pages</code> in your project.</p>
+        <!-- <p class="instructions text-sm sm:text-base md:text-lg mb-4">To get started, open the directory <code>src/pages</code> in your project.</p> -->
         
         <!-- Imagen de la botella centrada -->
+
+        <!--le modifique el tamaño de la imagen de la botella -->
+
         <div class="relative mx-auto w-64 h-64">
             <!-- Hojas detrás de la botella -->
 
@@ -25,7 +31,7 @@
             <img src="public/img/sheets/hojaIzquierda.png" alt="Hoja Fondo 5" class="absolute top-[20px] left-[10px] w-16 h-16 z-0 opacity-70">
 
             <!-- Imagen de la botella centrada con rotación personalizada -->
-            <img src="public/img/layers/caffe.png" alt="Botella" class="w-full h-full object-cover relative z-10 transform" style="transform: rotate(325deg);" />
+            <img src="/img/layers/coffte-cafe-product.png" alt="Botella" class="w-auto h-auto object-cover relative z-0 transform" style="transform: rotate(325deg);" />
         </div>
     </div>
 </div>
