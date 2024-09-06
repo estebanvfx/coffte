@@ -1,6 +1,6 @@
 ---
-import Navbar from '@/components/Navbar.astro';
-
+import Navbar from '@/components/layout/Navbar.astro';
+import SideMenu from '@/components/layout/SideMenu.astro';
 interface Props {
 	title: string;
 }
@@ -20,6 +20,7 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<Navbar />
+		<SideMenu />
 		<slot />
 	</body>
 </html>
