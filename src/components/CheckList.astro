@@ -1,0 +1,13 @@
+---
+interface Props {
+    body: string;
+}
+
+import { Icon } from 'astro-icon/components';
+const {body } = Astro.props;
+---
+
+<li class="flex items-center gap-3 mt-1">
+    <Icon name="check-solid" class="text-red-900 text-xl font-black" />
+    <p class="text-black text-lg font-normal">{body}</p>
+</li>

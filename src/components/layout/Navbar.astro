@@ -2,26 +2,22 @@
 import { Icon } from 'astro-icon/components';
 ---
 
-<header class="fixed top-0 left-0 w-full flex justify-center md:pt-8 z-50 ">
-    <nav class="bg-white max-w-6xl w-full flex justify-between md:justify-between items-center py-4 md:py-0 px-8 font-bold text-base lg:rounded-xl shadow-lg">
-        <div class="">
-            <a href=""><img src="/img/logo.png" alt="" class="md:w-20 w-10"></a>
+<header class="top-0 left-0 w-full flex justify-center z-50">
+    <nav class="bg-[rgb(215,0,33)] w-full flex justify-between md:justify-between items-center py-4 md:py-0 font-bold text-base shadow-lg px-72">
+        <div>
+            <a href=""><img src="/img/logo-coffe.png" alt="" class="md:w-20 w-10"></a>
         </div>
         <div class="hidden md:block">
             <ul>
-                <li class="flex gap-6 md:gap-10 text-gray-800">
-                    <a class="text-[#3d1218] transition-all duration-300" href="/">Inicio</a>
-                    <a class="hover:text-[#3d1218] transition-all duration-300" href="/about">Sobre nosotros</a>
-                    <a class="hover:text-[#3d1218] transition-all duration-300" href="/products">Productos</a>
-                    <a class="hover:text-[#3d1218] transition-all duration-300" href="/contact">Contáctenos</a>
+                <li class="flex gap-6 md:gap-10 text-white">
+                    <a class="text-[#3d1218] transition-all duration-300 text-lg" href="/">Inicio</a>
+                    <a class="hover:text-[#3d1218] transition-all duration-300 text-lg" href="/about">Sobre nosotros</a>
+                    <a class="hover:text-[#3d1218] transition-all duration-300 text-lg" href="/products">Productos</a>
+                    <a class="hover:text-[#3d1218] transition-all duration-300 text-lg" href="/contact">Contáctenos</a>
                 </li>
             </ul>
         </div>
-        <div class="hidden md:block">
-            <button class="bg-[#abca37] hover:bg-yellow-500 text-white px-4 py-2 rounded-md transition-all duration-300">
-                PARTHER
-            </button>
-        </div>
+        
         <button id="nav_button" class="md:hidden">
             <Icon id='icon_burger' name="burger" size={32} class="block"/>
             <Icon id='icon_cross' name="cross" size={32} class="hidden"/>

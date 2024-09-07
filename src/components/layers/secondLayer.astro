@@ -1,0 +1,33 @@
+---
+import '@fontsource/satisfy';
+import '@fontsource/poppins';
+import CheckList from '@/components/CheckList.astro';
+---
+<div class="w-full h-auto flex flex-col md:flex-row bg-[#fff6ea] md:px-44 py-20 texto-general">
+    <div class="w-full h-full">
+        <h1 class="text-[#3d1218] cursive-font font-semibold text-3xl mb-3" >¡Acerca de Coffté!</h1>
+        <h2 class="text-black text-7xl font-bold">Sabor Natural en Cada Sorbo</h2>
+        <p class="text-black text-lg font-medium mt-5">Disfruta el placer de una bebida deliciosa y saludable, creada con ingredientes frescos y naturales para tu bienestar.</p>
+        <ul class="text-black text-sm font-medium mt-4">
+            <CheckList body="Placer y bienestar en cada sorbo."/>
+            <CheckList body="Frutas frescas, hierbas y miel de panela."/>
+            <CheckList body="Altos estándares en cada etapa."/>
+            <CheckList body="Uso sostenible de recursos."/>
+            <CheckList body="Innovadoras y deliciosas."/>
+        </ul>
+    </div>
+
+    <div class="w-full h-full flex justify-center items-center">
+        <img class="w-auto h-[55vh] rounded-xl shadow-xl" src="/img/coffte-layer.jpg" alt="Coffte">
+    </div>
+</div>
+
+<style>
+    .cursive-font{
+        font-family: 'Satisfy', cursive;
+    }
+
+    .texto-general{
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
