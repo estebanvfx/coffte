@@ -1,43 +1,49 @@
-<style>
-    .leaf {
-        transition: transform 0.3s ease;
-    }
-
-    @keyframes springMove {
-        0% { transform: translateY(0) scale(1); }
-        25% { transform: translateY(-20px) scale(1.2); }
-        50% { transform: translateY(10px) scale(0.9); }
-        75% { transform: translateY(-10px) scale(1.05); }
-        100% { transform: translateY(0) scale(1); }
-    }
-
-    .container:hover .leaf {
-        animation: springMove 1s ease-in-out;
-    }
-
-    .container {
-        position: relative;
-    }
-</style>
-
-<div class="flex flex-col md:flex-row gap-4 md:pt-52 pt-28 md:px-40 pb-20 bg-[#fcdfe3]">
-    <div class="flex-1 p-4">
-        <h1 class="md:text-4xl text-3xl font-bold uppercase text-start text-[#3d1218]">Del corazón del café, nacen sabores naturales que transforman</h1>
-        <p class="text-xl md:text-2xl mt-3 font-bold text-start bg-[#3d1218] text-white px-4 py-2 inline-block uppercase">Recuerda cuidar de ti y de los tuyos.</p>
-    </div>
-    <div class="flex-1 relative container"> 
+---
+import InteractiveLeaf from '../ReactComponents/InteractiveLeaf';
+import '@fontsource/poppins';
+---
+<div class="flex flex-col md:flex-row gap-4 md:pt-28 md:px-44 h-[75vh] bg-[url('/img/bg/bg-1.png')]">
+    <div class="flex-1 h-full flex flex-col mt-14 items-start">
+        <h1 class="capitalize poppins-bold md:text-7xl text-3xl text-[#3d1218]">Del corazón del campo, nacen sabores naturales que transforman</h1>
+        <p class="text-lg md:text-xl mt-3 font-bold text-start bg-[#3d1218] text-white px-4 py-2 inline-block uppercase">Recuerda cuidar de ti y de los tuyos.</p>
+    </div>    
+    <div class="flex-1 relative h-full"> 
         <div class="relative mx-auto w-64 md:w-80 h-48 md:h-64">
-            <!-- Hojas detrás de la botella -->
-            <img src="/img/sheets/hoja_derc_doble.png" alt="Hoja Fondo 1" class="leaf absolute top-[2000px] md:top-[200px] left-[40px] md:left-[90px] w-16 h-16 md:w-20 md:h-20 z-0 opacity-70 hidden md:block">
-            <img src="/img/sheets/hoja_derc.png" alt="Hoja Fondo 2" class="leaf absolute top-[5px] md:top-[7px] right-[25px] md:right-[50px] w-12 h-12 md:w-14 md:h-14 z-0 opacity-70 hidden md:block">
-            <img src="/img/sheets/hojaIzquierda.png" alt="Hoja Fondo 5" class="leaf absolute top-[20px] md:top-[40px] left-[-20px] md:left-[-30px] w-12 h-12 md:w-16 md:h-16 z-0 opacity-70 hidden md:block">
-
             <!-- Imagen de la botella con tamaño ajustado y centrada sin afectar el contenedor -->
-            <img src="/img/layers/coffte-cafe-product.png" alt="Botella" 
-                class="absolute inset-0 m-auto z-10 md:mb-1"
-                style="width: 250px; height: 320px; transform: rotate(325deg);" />
-
-                <!-- EL RESPONIVE ESTA RARO O ESO CREO, SI AYUDA SE AGREADECE SI NO TAMBIEN -->
+            <img src="/img/layers/home-product.png" alt="Botella" class="drop-shadow-md absolute flex items-center justify-center inset-0 max-w-[90vw] max-h-[90vh] z-10"/>
+            <!-- Hojas detrás de la botella -->
+            <div class="absolute left-80 top-80 z-30">
+                <InteractiveLeaf height="h-56" width="w-56" client:load pattern="default" imgUrl="https://web.moxcreative.com/happyjuice/wp-content/uploads/sites/16/elementor/thumbs/leave__0001_Layer-3-q2v9blj30m5fteulgt5ojo1ceqejuz5mlnlvuawqgw.png" />
+            </div>
+            <div class="absolute -left-20 top-56 z-10">
+                <InteractiveLeaf height="h-36" width="w-36"  client:load pattern="default2" imgUrl="https://web.moxcreative.com/happyjuice/wp-content/uploads/sites/16/elementor/thumbs/leave__0003_Layer-8-q2v9bnerea80gmrv5tyxonk9li5aadd39wwusuty4g.png" />
+            </div>
+            <div class="absolute  left-64 top-16 rotate-180">
+                <InteractiveLeaf height="h-28" width="w-28"  client:load pattern="circular" imgUrl="https://web.moxcreative.com/happyjuice/wp-content/uploads/sites/16/elementor/thumbs/leave__0002_Layer-4-q2v9bmgx7g6q50t8bbkb45st049x2o9cxs9dbkvcao.png" />
+            </div>
         </div>
     </div>
 </div>
+
+
+<style>
+    @keyframes zoomIn {
+        from {
+            opacity: 0;
+            transform: scale3d(0.3, 0.3, 0.3);
+        }
+        50% {
+            opacity: 1;
+        }
+    }
+
+    .animate-zoomIn {
+        animation: zoomIn 1s ease-out;
+    }
+
+    .poppins-bold {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+    font-variation-settings: "wdth" 75, "wght"
+    }
+</style>
