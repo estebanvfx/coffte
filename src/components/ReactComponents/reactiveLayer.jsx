@@ -1,6 +1,6 @@
 const ReactiveLayer = ({ bgImage, bottleImage }) => {
     return (
-        <div className="relative w-80 h-80 overflow-visible">
+        <div className="relative w-80 h-80 overflow-visible hover:scale-105 transition-all duration-300">
             <img 
                 src={bgImage} 
                 alt="bg" 
@@ -15,13 +15,14 @@ const ReactiveLayer = ({ bgImage, bottleImage }) => {
             <img 
                 src={bottleImage} 
                 alt="bottle" 
-                className="absolute bottom-0 right-0"
+                className="absolute bottom-0 right-0 hover:-translate-y-2 transition-all duration-300"
                 style={{ 
                     width: 'auto', 
                     height: 'auto', 
                     maxWidth: '100%',
                     maxHeight: '100%', 
-                    objectFit: 'contain' 
+                    objectFit: 'contain',
+                    transition: 'transform 0.3s ease-in-out'
                 }} 
             />
         </div>

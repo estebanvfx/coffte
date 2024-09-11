@@ -1,17 +1,21 @@
 ---
 import { ReactiveLayer, ReactiveText } from '../ReactComponents/reactiveLayer';
+import '@fontsource/poppins/700.css';
+import '@fontsource/satisfy';
 ---
 
-<div class="p-5" style="background-color: rgb(241, 215, 68);">
-    <div class="flex flex-col md:flex-row justify-center items-center md:space-x-12">
+<div class="p-5 bg-gradient-to-t from-[#fefede] to-[#fcb501] h-screen flex flex-col justify-center items-center">
+    <h1 class="text-center text-white text-6xl font-[Poppins] font-extrabold">Encuentra <span class="text-green-950 font-[Satisfy]">tu</span> sabor</h1>
+    <p class="text-center text-white text-lg font-[Poppins]">Elige entre nuestras deliciosas bebidas naturales y descubre tu combinación perfecta.</p>
+    <div class="flex flex-col md:flex-row justify-center items-center md:space-x-12 mt-32">
         <div class="flex flex-col items-center">
-            <ReactiveLayer bgImage="public/img/manzanas.png" bottleImage="public/img/botellaaa.png" /><ReactiveText text="Fresh" text_2="Apple"/>
+            <ReactiveLayer bgImage="public/img/cascara.png" bottleImage="public/img/layers/cafe-2.png" /><ReactiveText text="Coffté" text_2="Coffé"/>
         </div>
         <div class="flex flex-col items-center">
-            <ReactiveLayer bgImage="public/img/naranjas.png" bottleImage="public/img/botella_n.png" /><ReactiveText text="Fresh" text_2="Orange"/>
+            <ReactiveLayer bgImage="https://static.vecteezy.com/system/resources/previews/033/303/213/non_2x/ginger-with-ai-generated-free-png.png" bottleImage="public/img/layers/genjibre.png" /><ReactiveText text="Coffté" text_2="Genjibre"/>
         </div>
         <div class="flex flex-col items-center">
-            <ReactiveLayer bgImage="public/img/uvas.png" bottleImage="public/img/botella_v.png" /><ReactiveText text="Fresh" text_2="Grape"/>
+            <ReactiveLayer bgImage="public/img/panela-limon.png" bottleImage="public/img/layers/sirope.png" /><ReactiveText text="Coffté" text_2="Sirope"/>
         </div>
     </div>
 </div>
