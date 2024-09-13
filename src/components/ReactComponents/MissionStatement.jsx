@@ -1,29 +1,26 @@
 import React, { useEffect } from 'react';
 import { Coffee, Leaf, Users, Star, Heart } from 'lucide-react';
+import '@fontsource/poppins/700.css';
+import { FaLeaf } from "react-icons/fa";
+
 
 const MissionStatement = () => {
 
-    useEffect(() => {
-        const link = document.createElement('link');
-        link.href = 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap';
-        link.rel = 'stylesheet';
-        document.head.appendChild(link);
-    }, []);
-
     return (
-        <div className="bg-gradient-to-b from-yellow-100 to-green-100 p-8 shadow-lg font-sans" style={{ fontFamily: 'Poppins, sans-serif' }}>
-            <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Nuestra Misión</h2>
+        <section className="font-[Poppins] bg-gradient-to-b from-[#fefede] to-green-100">
+            <span className='px-44 flex items-center justify-center gap-3'><hr className='w-[50%] border-green-900' /> <FaLeaf className='text-green-950 text-5xl' />  <hr className='w-[50%] border-green-900' /></span>
+            <div className="px-80 py-20">
+                <h2 className="text-5xl font-bold text-[#1e1e20] mb-6 uppercase">Nuestra Misión</h2>
                 
-                <p className="text-lg text-gray-900 mb-6">
-                    En Refrescos Naturales COFFTE, inspiramos un estilo de vida saludable y sostenible, 
+                <p className="text-lg text-[#1e1e20] mb-6">
+                    En Refrescos Naturales Coffté, inspiramos un estilo de vida saludable y sostenible, 
                     ofreciendo bebidas refrescantes y deliciosas, elaboradas con ingredientes naturales 
                     de alta calidad, que promueven el bienestar y la felicidad de nuestros consumidores.
                 </p>
                 
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Nos comprometemos a:</h3>
+                <h3 className="text-2xl font-semibold text-[#1e1e20] mb-4">Nos comprometemos a:</h3>
                 
-                <ul className="space-y-4">
+                <ul className="space-y-4 pl-10">
                     {[
                     { icon: <Coffee className="text-brown-500" />, text: "Ofrecer productos innovadores y auténticos, libres de aditivos artificiales." },
                     { icon: <Leaf className="text-green-500" />, text: "Fomentar prácticas sostenibles en nuestra cadena de suministro y operaciones." },
@@ -33,17 +30,17 @@ const MissionStatement = () => {
                     ].map((item, index) => (
                     <li key={index} className="flex items-center space-x-3">
                         {item.icon}
-                        <span className="text-gray-900">{item.text}</span>
+                        <span className="text-[#1e1e20]">{item.text}</span>
                     </li>
                     ))}
                 </ul>
                 
-                <p className="mt-6 text-lg font-semibold text-gray-900">
+                <p className="mt-6 text-lg font-semibold text-[#1e1e20]">
                     Nuestro objetivo es ser líderes en el mercado de refrescos naturales, siendo referentes 
                     en sostenibilidad y bienestar, y hacer la diferencia en la vida de las personas.
                 </p>
             </div>
-        </div>
+        </section>
     );
 };
 
