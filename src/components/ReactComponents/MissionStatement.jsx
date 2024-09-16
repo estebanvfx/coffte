@@ -1,14 +1,13 @@
 import React, { useEffect } from 'react';
 import { Coffee, Leaf, Users, Star, Heart } from 'lucide-react';
-import '@fontsource/poppins/700.css';
-import { FaLeaf } from "react-icons/fa";
+
 
 
 const MissionStatement = () => {
 
     return (
         <section className="font-[Poppins] bg-gradient-to-b from-[#fefede] to-yellow-100">
-            <span className='px-44 flex items-center justify-center gap-3'><hr className='w-[50%] border-green-900' /> <FaLeaf className='text-green-950 text-5xl' />  <hr className='w-[50%] border-green-900' /></span>
+            <span className='px-44 flex items-center justify-center gap-3'><hr className='w-[50%] border-green-900' />  <hr className='w-[50%] border-green-900' /></span>
             <div className="px-80 py-20">
                 <h2 className="text-5xl font-bold text-[#1e1e20] mb-6 uppercase">Nuestra Misión</h2>
                 
