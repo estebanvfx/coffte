@@ -15,6 +15,8 @@
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource/poppins": "^5.0.15",
     "@fontsource/satisfy": "^5.0.20",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "astro": "^4.15.3",

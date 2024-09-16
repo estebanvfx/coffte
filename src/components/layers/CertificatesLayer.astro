@@ -1,7 +1,23 @@
 ---
+import '@fontsource/poppins/700.css';
+import {Icon} from 'astro-icon/components';
 
 ---
 
-<section>
-    <h1>Certificates</h1>
-</section>
+<footer class="w-full h-auto bg-[#302216] p-11 px-80">
+    <div class="flex justify-between items-center mb-20">
+        <a href="#"><img src="/img/logo-white.png" alt="" class="md:w-20 w-10"></a>
+        <span class="underline decoration-solid font-[poppins] text-xl text-white flex items-center gap-2"><Icon name={"location-dot-solid"}/>Colombia</span>
+    </div>
+    <div class="text-xl font-normal text-white flex justify-between">
+        <div class="flex gap-10">
+            <a href="">Contáctanos</a>
+            <a href="">Términos y Condiciones</a>
+            <a href="">Política de privacidad</a>
+        </div>
+        <div class="flex">
+            <a href=""><img src="img/certificates/negocios-verdes.png" alt="Negocios-verdes" class="w-24 grayscale hover:grayscale-0 transition-all duration-500"></a>
+            <a href=""><img src="img/certificates/sello_positivo.png" alt="" class="w-56 grayscale hover:grayscale-0 transition-all duration-500"></a>
+        </div>
+    </div>
+</footer>
