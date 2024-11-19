@@ -16,7 +16,7 @@ const InteractiveLeaf = ({imgUrl, pattern, height, width}) => {
                     const centerX = window.innerWidth / 2;
                     const centerY = window.innerHeight / 2;
                     const angle = Math.atan2(e.clientY - centerY, e.clientX - centerX);
-                    const radius = 30; // Ajusta el radio para un movimiento más suave
+                    const radius = 30; 
                     const smoothness = 0.01;
                     setPosition((prevPosition) => ({
                         x: prevPosition.x + (radius * Math.cos(angle) - prevPosition.x) * smoothness,
