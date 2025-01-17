@@ -2,23 +2,25 @@
 import InteractiveLeaf from '../ReactComponents/InteractiveLeaf';
 import '@fontsource/poppins';
 ---
-<div class="flex flex-col md:flex-row gap-4 md:pt-28 md:px-44 h-[75vh] bg-[url('/img/bg/bg-1.png')]">
-    <div class="flex-1 h-full flex flex-col mt-14 items-start">
-        <h1 class="capitalize poppins-bold md:text-7xl text-3xl text-[#3d1218]">Del corazón del campo, nacen sabores naturales que transforman</h1>
-        <p class="text-lg md:text-xl mt-3 font-bold text-start bg-[#3d1218] text-white px-4 py-2 inline-block uppercase">Recuerda cuidar de ti y de los tuyos.</p>
+<div class="flex flex-col md:flex-row md:py-28 sm:px-10 md:px-44 px-6 h-[75vh] bg-[url('/img/bg/bg-1.png')] items-center">
+    <div class="flex-1 h-full flex flex-col justify-center">
+        <h1 class="capitalize poppins-bold md:text-6xl text-6xl 2xl:text-7xl text-[#3d1218]">Del corazón del campo, nacen sabores naturales que transforman</h1>
+        <p class="text-lg md:text-lg 2xl:text-xl mt-3 font-bold text-start uppercase">
+            <span class="bg-[#3d1218] text-white px-5 py-4 inline-block">Recuerda cuidar de ti y de los tuyos.</span>
+        </p>
     </div>    
-    <div class="flex-1 relative h-full"> 
+    <div class="flex-1 relative h-full hidden lg:block"> 
         <div class="relative mx-auto w-64 md:w-80 h-48 md:h-64">
             <!-- Imagen de la botella con tamaño ajustado y centrada sin afectar el contenedor -->
             <img src="/img/layers/home-product.png" alt="Botella" class="drop-shadow-md absolute flex items-center justify-center inset-0 max-w-[90vw] max-h-[90vh] z-10"/>
             <!-- Hojas detrás de la botella -->
-            <div class="absolute left-80 top-80 z-30">
+            <div class="absolute lg:left-52 top-80 z-30 hidden lg:block">
                 <InteractiveLeaf height="h-56" width="w-56" client:load pattern="default" imgUrl="https://web.moxcreative.com/happyjuice/wp-content/uploads/sites/16/elementor/thumbs/leave__0001_Layer-3-q2v9blj30m5fteulgt5ojo1ceqejuz5mlnlvuawqgw.png" />
             </div>
-            <div class="absolute -left-20 top-56 z-10">
+            <div class="absolute -left-20 top-56 z-10 hidden lg:block">
                 <InteractiveLeaf height="h-36" width="w-36"  client:load pattern="default2" imgUrl="https://web.moxcreative.com/happyjuice/wp-content/uploads/sites/16/elementor/thumbs/leave__0003_Layer-8-q2v9bnerea80gmrv5tyxonk9li5aadd39wwusuty4g.png" />
             </div>
-            <div class="absolute  left-64 top-16 rotate-180">
+            <div class="absolute left-64 top-16 rotate-180 hidden lg:block">
                 <InteractiveLeaf height="h-28" width="w-28"  client:load pattern="circular" imgUrl="https://web.moxcreative.com/happyjuice/wp-content/uploads/sites/16/elementor/thumbs/leave__0002_Layer-4-q2v9bmgx7g6q50t8bbkb45st049x2o9cxs9dbkvcao.png" />
             </div>
         </div>

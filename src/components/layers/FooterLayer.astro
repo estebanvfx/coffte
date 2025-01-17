@@ -4,20 +4,20 @@ import {Icon} from 'astro-icon/components';
 
 ---
 
-<footer class="w-full h-auto bg-[#302216] p-11 px-80">
+<footer class="w-auto h-auto bg-[#302216] px-10 2xl:px-80 py-10">
     <div class="flex justify-between items-center mb-20">
         <a href="#"><img src="/img/logo-white.png" alt="" class="md:w-20 w-10"></a>
         <span class="underline decoration-solid font-[poppins] text-xl text-white flex items-center gap-2"><Icon name={"location-dot-solid"}/>Colombia</span>
     </div>
-    <div class="text-xl font-normal text-white flex justify-between">
-        <div class="flex gap-10">
+    <div class="text-xl font-normal text-white flex justify-between w-full">
+        <div class="flex flex-col gap-1">
             <a href="">Contáctanos</a>
             <a href="">Términos y Condiciones</a>
             <a href="">Política de privacidad</a>
         </div>
         <div class="flex">
-            <a href=""><img src="img/certificates/negocios-verdes.png" alt="Negocios-verdes" class="w-24 grayscale hover:grayscale-0 transition-all duration-500"></a>
-            <a href=""><img src="img/certificates/sello_positivo.png" alt="" class="w-56 grayscale hover:grayscale-0 transition-all duration-500"></a>
+            <a href=""><img src="img/certificates/negocios-verdes.png" alt="Negocios-verdes" class="lg:w-24 w-20 grayscale hover:grayscale-0 transition-all duration-500"></a>
+            <a href=""><img src="img/certificates/sello_positivo.png" alt="" class="lg:w-56 w-40 grayscale hover:grayscale-0 transition-all duration-500"></a>
         </div>
     </div>
 </footer>
