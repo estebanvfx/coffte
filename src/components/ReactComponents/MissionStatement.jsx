@@ -7,8 +7,8 @@ const MissionStatement = () => {
 
     return (
         <section className="font-[Poppins] bg-gradient-to-b from-[#fefede] to-yellow-100">
-            <span className='px-44 flex items-center justify-center gap-3'><hr className='w-[50%] border-green-900' />  <hr className='w-[50%] border-green-900' /></span>
-            <div className="px-80 py-20">
+            <span className='lg:px-44 px-10 flex items-center justify-center gap-3'><hr className='w-[50%] border-green-900' />  <hr className='w-[50%] border-green-900' /></span>
+            <div className="lg:px-44 px-10 py-20">
                 <h2 className="text-5xl font-bold text-[#1e1e20] mb-6 uppercase">Nuestra Misión</h2>
                 
                 <p className="text-lg text-[#1e1e20] mb-6">
