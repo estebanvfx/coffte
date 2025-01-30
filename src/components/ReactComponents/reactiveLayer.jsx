@@ -33,11 +33,10 @@ const ReactiveLayer = ({ bgImage, bottleImage }) => {
 const ReactiveText = ({ text, text_2 }) => {
     return (
         <div 
-            className="flex items-center justify-center rounded-full mt-5 lg:ml-32 md:ml-16"
+            className="flex items-center justify-center rounded-full mt-5 lg:ml-32 md:ml-16 shadow-xl"
             style={{
                 backgroundColor: 'rgb(254, 254, 222)',
                 width: '150px',
-                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)', 
                 position: 'relative',
                 zIndex: 1,
                 paddingLeft: '90px',
