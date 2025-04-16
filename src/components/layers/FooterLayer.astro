@@ -1,0 +1,21 @@
+---
+import '@fontsource/poppins/700.css';
+import {Icon} from 'astro-icon/components';
+
+---
+
+<footer class="w-auto h-auto bg-[#302216] px-5 2xl:px-80 py-10">
+    <div class="flex justify-between items-center mb-20">
+        <img src="/img/logo-white.png" alt="" class="md:w-20 w-20 grayscale hover:grayscale-0 transition-all duration-500">
+        <div class="flex flex-col gap-8">
+            <span class="underline decoration-solid font-[poppins] text-xl text-white flex items-center gap-2"><Icon name={"location-dot-solid"}/>Colombia</span>
+            <div class="flex gap-2 items-center">
+                <img src="img/certificates/negocios-verdes.png" alt="Negocios-verdes" class="lg:w-16 w-10 grayscale hover:grayscale-0 transition-all duration-500">
+                <img src="img/certificates/sello_positivo.png" alt="" class="lg:w-36 w-20 grayscale hover:grayscale-0 transition-all duration-500">
+            </div>
+        </div>
+    </div>
+    <div class="text-sm font-normal text-white flex justify-center w-full">
+        <p>© 2025 Coffté. Todos los derechos reservados.</p>
+    </div>
+</footer>
